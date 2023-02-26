@@ -8,14 +8,19 @@
     </head>
     <body>
         <h1><%= day %></h1>
+        <ul>
+            <!-- <li>buy food</li>
+            <li>eat food</li> -->
+            <% for (let newListItem of newListItems) { %>
+                <li><%= newListItem %></li> 
+            <% } %>
+
+            
+        </ul>
         <form action="/" method="post">
             <input type="text" name="newItem">
             <button type="submit" name="button">Add</button>
         </form>
-        <ul>
-            <li>buy food</li>
-            <li>eat food</li>  
-        </ul>
         
     </body>
 </html>
