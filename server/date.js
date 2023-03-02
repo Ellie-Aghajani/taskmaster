@@ -10,4 +10,4 @@ const getDate = () =>{
     return day;
 }
 
-export default getDate;
+module.exports = getDate;
